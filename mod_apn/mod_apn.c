@@ -1223,7 +1223,7 @@ static switch_call_cause_t apn_wait_outgoing_channel(switch_core_session_t *sess
                 switch_event_unbind(&register_event);
                 register_event = NULL;
             }
-#if (switch_versiion_int() >= 18)
+#if (switch_version_int() >= 18)
             if (switch_ivr_originate(session, new_session, &cause, destination, current_timelimit, NULL,
                                 cid_name_override, cid_num_override, outbound_profile, var_event, flags,
                                 cancel_cause, NULL) == SWITCH_STATUS_SUCCESS) {
